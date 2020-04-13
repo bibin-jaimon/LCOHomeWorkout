@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Drills" representedClassName=".Drills" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercises" inverseName="drills" inverseEntity="Exercises"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workouts" inverseName="drills" inverseEntity="Workouts"/>
+    </entity>
+    <entity name="Exercises" representedClassName=".Exercises" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="drills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drills" inverseName="exercises" inverseEntity="Drills"/>
+    </entity>
+    <entity name="UserWorkoutMode" representedClassName=".UserWorkoutMode" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mode" optional="YES" attributeType="String"/>
+        <attribute name="numOfSets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Workouts" representedClassName=".Workouts" syncable="YES">
+        <attribute name="creaedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="workoutPeriods" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="drills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drills" inverseName="workout" inverseEntity="Drills"/>
+    </entity>
+    <elements>
+        <element name="Drills" positionX="60" positionY="91" width="128" height="103"/>
+        <element name="Exercises" positionX="-157" positionY="-30" width="128" height="133"/>
+        <element name="UserWorkoutMode" positionX="-114" positionY="-140" width="128" height="88"/>
+        <element name="Workouts" positionX="-27" positionY="-9" width="128" height="118"/>
+    </elements>
+</model>

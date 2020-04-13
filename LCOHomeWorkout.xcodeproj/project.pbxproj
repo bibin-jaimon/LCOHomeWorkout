@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B21F94F243E816700E157CD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B21F94E243E816700E157CD /* CoreDataManager.swift */; };
+		7B35AF73243FB37D00D2D63D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35AF72243FB37D00D2D63D /* MockData.swift */; };
+		7B7B3D66243E83C400CF643B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B3D65243E83C400CF643B /* Utilities.swift */; };
+		7B7B3D68243E8F1F00CF643B /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B3D67243E8F1F00CF643B /* UserDefaultManager.swift */; };
+		7BA414222441C4350088EF49 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414212441C4350088EF49 /* Session.swift */; };
+		7BA414352441D06E0088EF49 /* Drills+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4142F2441D06E0088EF49 /* Drills+CoreDataClass.swift */; };
+		7BA414362441D06E0088EF49 /* Drills+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414302441D06E0088EF49 /* Drills+CoreDataProperties.swift */; };
+		7BA414372441D06E0088EF49 /* UserWorkoutMode+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414312441D06E0088EF49 /* UserWorkoutMode+CoreDataClass.swift */; };
+		7BA414382441D06E0088EF49 /* UserWorkoutMode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414322441D06E0088EF49 /* UserWorkoutMode+CoreDataProperties.swift */; };
+		7BA414392441D06E0088EF49 /* Exercises+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414332441D06E0088EF49 /* Exercises+CoreDataClass.swift */; };
+		7BA4143A2441D06E0088EF49 /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA414342441D06E0088EF49 /* Exercises+CoreDataProperties.swift */; };
+		7BA4143D2441F3510088EF49 /* Workouts+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4143B2441F3510088EF49 /* Workouts+CoreDataClass.swift */; };
+		7BA4143E2441F3510088EF49 /* Workouts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4143C2441F3510088EF49 /* Workouts+CoreDataProperties.swift */; };
+		7BBDC78B243CADAD00D5977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC78A243CADAD00D5977D /* AppDelegate.swift */; };
+		7BBDC78D243CADAD00D5977D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC78C243CADAD00D5977D /* SceneDelegate.swift */; };
+		7BBDC78F243CADAD00D5977D /* WorkoutListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC78E243CADAD00D5977D /* WorkoutListViewController.swift */; };
+		7BBDC792243CADAE00D5977D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBDC790243CADAD00D5977D /* Main.storyboard */; };
+		7BBDC795243CADAE00D5977D /* LCOHomeWorkout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC793243CADAE00D5977D /* LCOHomeWorkout.xcdatamodeld */; };
+		7BBDC797243CADB300D5977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BBDC796243CADB300D5977D /* Assets.xcassets */; };
+		7BBDC79A243CADB300D5977D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBDC798243CADB300D5977D /* LaunchScreen.storyboard */; };
+		7BBDC7AD243CC03600D5977D /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7AC243CC03600D5977D /* CommonExtensions.swift */; };
+		7BBDC7AF243CF0C300D5977D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7AE243CF0C300D5977D /* Resources.swift */; };
+		7BBDC7B1243CF3FD00D5977D /* WorkoutModeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7B0243CF3FC00D5977D /* WorkoutModeSelectionViewController.swift */; };
+		7BBDC7B3243CF48F00D5977D /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7B2243CF48F00D5977D /* NavigationManager.swift */; };
+		7BBDC7B5243CFB3800D5977D /* WorkoutModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7B4243CFB3800D5977D /* WorkoutModeCollectionViewCell.swift */; };
+		7BBDC7B7243D0C5700D5977D /* LCOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDC7B6243D0C5700D5977D /* LCOButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B21F94E243E816700E157CD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7B35AF72243FB37D00D2D63D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		7B7B3D65243E83C400CF643B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7B7B3D67243E8F1F00CF643B /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		7BA414212441C4350088EF49 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7BA4142F2441D06E0088EF49 /* Drills+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drills+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BA414302441D06E0088EF49 /* Drills+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drills+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BA414312441D06E0088EF49 /* UserWorkoutMode+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserWorkoutMode+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BA414322441D06E0088EF49 /* UserWorkoutMode+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserWorkoutMode+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BA414332441D06E0088EF49 /* Exercises+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BA414342441D06E0088EF49 /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BA4143B2441F3510088EF49 /* Workouts+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workouts+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BA4143C2441F3510088EF49 /* Workouts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workouts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BBDC787243CADAD00D5977D /* LCOHomeWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCOHomeWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBDC78A243CADAD00D5977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BBDC78C243CADAD00D5977D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7BBDC78E243CADAD00D5977D /* WorkoutListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewController.swift; sourceTree = "<group>"; };
+		7BBDC791243CADAD00D5977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BBDC794243CADAE00D5977D /* LCOHomeWorkout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LCOHomeWorkout.xcdatamodel; sourceTree = "<group>"; };
+		7BBDC796243CADB300D5977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BBDC799243CADB300D5977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BBDC79B243CADB300D5977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BBDC7AC243CC03600D5977D /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+		7BBDC7AE243CF0C300D5977D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		7BBDC7B0243CF3FC00D5977D /* WorkoutModeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModeSelectionViewController.swift; sourceTree = "<group>"; };
+		7BBDC7B2243CF48F00D5977D /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		7BBDC7B4243CFB3800D5977D /* WorkoutModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7BBDC7B6243D0C5700D5977D /* LCOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BBDC784243CADAD00D5977D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B156600243E465F001394BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC7AE243CF0C300D5977D /* Resources.swift */,
+				7B156601243E466A001394BD /* Fonts */,
+				7B35AF72243FB37D00D2D63D /* MockData.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7B156601243E466A001394BD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7B21F949243E79FC00E157CD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7B21F94E243E816700E157CD /* CoreDataManager.swift */,
+				7B7B3D67243E8F1F00CF643B /* UserDefaultManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7BBDC77E243CADAD00D5977D = {
+			isa = PBXGroup;
+			children = (
+				7BBDC789243CADAD00D5977D /* LCOHomeWorkout */,
+				7BBDC788243CADAD00D5977D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BBDC788243CADAD00D5977D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC787243CADAD00D5977D /* LCOHomeWorkout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BBDC789243CADAD00D5977D /* LCOHomeWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC7B2243CF48F00D5977D /* NavigationManager.swift */,
+				7BBDC78A243CADAD00D5977D /* AppDelegate.swift */,
+				7BBDC78C243CADAD00D5977D /* SceneDelegate.swift */,
+				7B21F949243E79FC00E157CD /* Managers */,
+				7B156600243E465F001394BD /* Resources */,
+				7BBDC7AB243CC02100D5977D /* Utilities */,
+				7BBDC7A4243CB72B00D5977D /* CoreData */,
+				7BBDC7A3243CB70B00D5977D /* Controller */,
+				7BBDC7A2243CB70500D5977D /* View */,
+				7BBDC7A1243CB6F400D5977D /* Model */,
+				7BBDC796243CADB300D5977D /* Assets.xcassets */,
+				7BBDC79B243CADB300D5977D /* Info.plist */,
+			);
+			path = LCOHomeWorkout;
+			sourceTree = "<group>";
+		};
+		7BBDC7A1243CB6F400D5977D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BBDC7A2243CB70500D5977D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC7A5243CB92500D5977D /* CustomComponents */,
+				7BBDC798243CADB300D5977D /* LaunchScreen.storyboard */,
+				7BBDC790243CADAD00D5977D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BBDC7A3243CB70B00D5977D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC78E243CADAD00D5977D /* WorkoutListViewController.swift */,
+				7BBDC7B0243CF3FC00D5977D /* WorkoutModeSelectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7BBDC7A4243CB72B00D5977D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7BA4143B2441F3510088EF49 /* Workouts+CoreDataClass.swift */,
+				7BA4143C2441F3510088EF49 /* Workouts+CoreDataProperties.swift */,
+				7BA4142F2441D06E0088EF49 /* Drills+CoreDataClass.swift */,
+				7BA414302441D06E0088EF49 /* Drills+CoreDataProperties.swift */,
+				7BA414312441D06E0088EF49 /* UserWorkoutMode+CoreDataClass.swift */,
+				7BA414322441D06E0088EF49 /* UserWorkoutMode+CoreDataProperties.swift */,
+				7BA414332441D06E0088EF49 /* Exercises+CoreDataClass.swift */,
+				7BA414342441D06E0088EF49 /* Exercises+CoreDataProperties.swift */,
+				7BBDC793243CADAE00D5977D /* LCOHomeWorkout.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7BBDC7A5243CB92500D5977D /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC7B4243CFB3800D5977D /* WorkoutModeCollectionViewCell.swift */,
+				7BBDC7B6243D0C5700D5977D /* LCOButton.swift */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		7BBDC7AB243CC02100D5977D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7BBDC7AC243CC03600D5977D /* CommonExtensions.swift */,
+				7B7B3D65243E83C400CF643B /* Utilities.swift */,
+				7BA414212441C4350088EF49 /* Session.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BBDC786243CADAD00D5977D /* LCOHomeWorkout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BBDC79E243CADB300D5977D /* Build configuration list for PBXNativeTarget "LCOHomeWorkout" */;
+			buildPhases = (
+				7BBDC783243CADAD00D5977D /* Sources */,
+				7BBDC784243CADAD00D5977D /* Frameworks */,
+				7BBDC785243CADAD00D5977D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCOHomeWorkout;
+			productName = LCOHomeWorkout;
+			productReference = 7BBDC787243CADAD00D5977D /* LCOHomeWorkout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BBDC77F243CADAD00D5977D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Bibin Jaimon";
+				TargetAttributes = {
+					7BBDC786243CADAD00D5977D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 7BBDC782243CADAD00D5977D /* Build configuration list for PBXProject "LCOHomeWorkout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BBDC77E243CADAD00D5977D;
+			productRefGroup = 7BBDC788243CADAD00D5977D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BBDC786243CADAD00D5977D /* LCOHomeWorkout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BBDC785243CADAD00D5977D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBDC79A243CADB300D5977D /* LaunchScreen.storyboard in Resources */,
+				7BBDC797243CADB300D5977D /* Assets.xcassets in Resources */,
+				7BBDC792243CADAE00D5977D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BBDC783243CADAD00D5977D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBDC78F243CADAD00D5977D /* WorkoutListViewController.swift in Sources */,
+				7BBDC795243CADAE00D5977D /* LCOHomeWorkout.xcdatamodeld in Sources */,
+				7B7B3D66243E83C400CF643B /* Utilities.swift in Sources */,
+				7BBDC7AF243CF0C300D5977D /* Resources.swift in Sources */,
+				7BBDC78B243CADAD00D5977D /* AppDelegate.swift in Sources */,
+				7BBDC7B5243CFB3800D5977D /* WorkoutModeCollectionViewCell.swift in Sources */,
+				7BBDC7B1243CF3FD00D5977D /* WorkoutModeSelectionViewController.swift in Sources */,
+				7BA414362441D06E0088EF49 /* Drills+CoreDataProperties.swift in Sources */,
+				7BBDC7B3243CF48F00D5977D /* NavigationManager.swift in Sources */,
+				7BA414382441D06E0088EF49 /* UserWorkoutMode+CoreDataProperties.swift in Sources */,
+				7BA414372441D06E0088EF49 /* UserWorkoutMode+CoreDataClass.swift in Sources */,
+				7B21F94F243E816700E157CD /* CoreDataManager.swift in Sources */,
+				7BA4143E2441F3510088EF49 /* Workouts+CoreDataProperties.swift in Sources */,
+				7BA4143A2441D06E0088EF49 /* Exercises+CoreDataProperties.swift in Sources */,
+				7B7B3D68243E8F1F00CF643B /* UserDefaultManager.swift in Sources */,
+				7BBDC78D243CADAD00D5977D /* SceneDelegate.swift in Sources */,
+				7BA414352441D06E0088EF49 /* Drills+CoreDataClass.swift in Sources */,
+				7BA4143D2441F3510088EF49 /* Workouts+CoreDataClass.swift in Sources */,
+				7BA414222441C4350088EF49 /* Session.swift in Sources */,
+				7B35AF73243FB37D00D2D63D /* MockData.swift in Sources */,
+				7BA414392441D06E0088EF49 /* Exercises+CoreDataClass.swift in Sources */,
+				7BBDC7B7243D0C5700D5977D /* LCOButton.swift in Sources */,
+				7BBDC7AD243CC03600D5977D /* CommonExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BBDC790243CADAD00D5977D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBDC791243CADAD00D5977D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BBDC798243CADB300D5977D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBDC799243CADB300D5977D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BBDC79C243CADB300D5977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BBDC79D243CADB300D5977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BBDC79F243CADB300D5977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LCOHomeWorkout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bb96.LCOHomeWorkout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BBDC7A0243CADB300D5977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LCOHomeWorkout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bb96.LCOHomeWorkout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BBDC782243CADAD00D5977D /* Build configuration list for PBXProject "LCOHomeWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBDC79C243CADB300D5977D /* Debug */,
+				7BBDC79D243CADB300D5977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BBDC79E243CADB300D5977D /* Build configuration list for PBXNativeTarget "LCOHomeWorkout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBDC79F243CADB300D5977D /* Debug */,
+				7BBDC7A0243CADB300D5977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BBDC793243CADAE00D5977D /* LCOHomeWorkout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BBDC794243CADAE00D5977D /* LCOHomeWorkout.xcdatamodel */,
+			);
+			currentVersion = 7BBDC794243CADAE00D5977D /* LCOHomeWorkout.xcdatamodel */;
+			path = LCOHomeWorkout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7BBDC77F243CADAD00D5977D /* Project object */;
+}
